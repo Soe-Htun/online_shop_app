@@ -36,6 +36,7 @@ export default {
   height: 30px;
   width: 85px;
   border-radius: 20px;
+  outline: none;
 }
 .products{
     overflow: auto;
@@ -47,7 +48,7 @@ export default {
    /* this will hide the scrollbar in internet explorers */
     -ms-overflow-style: none;
     scrollbar-width: none;  /* Firefox */
-    margin-bottom: 25px;
+    margin: 35px 0px;
     height: 100%;
 }
 img{

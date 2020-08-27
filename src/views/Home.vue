@@ -67,6 +67,7 @@ export default {
   vertical-align: middle;
   margin-right: 10px;
   border-radius: 20px;
+  outline: none;
 }
 header{
   height: 60px;
