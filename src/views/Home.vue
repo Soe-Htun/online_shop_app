@@ -71,7 +71,7 @@ export default {
 header{
   height: 60px;
   background-color: #eee;
-  text-align: right;
+  text-align: center;
   box-shadow: 3px 4px 5px 2px #999;
   font-size: 30px;
   vertical-align: middle;

@@ -40,7 +40,7 @@ export default {
 .products{
     overflow: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 30px;
      /* this will hide the scrollbar in mozilla based browsers */
     overflow: -moz-scrollbars-none;
@@ -53,5 +53,17 @@ export default {
 img{
   width: 200px;
   height: 200px;
+}
+@media only screen and (max-width: 1024px){
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 500px){
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 </style>
