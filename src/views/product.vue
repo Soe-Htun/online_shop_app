@@ -86,8 +86,8 @@ export default {
   display: none; 
 }
 img{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 h4{
     text-shadow: 2px 4px 5px #999;

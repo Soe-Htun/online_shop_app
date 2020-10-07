@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <header>
-       <button class="view" @click="navigateTo('products')">View Products</button>
+    <header id="header">
+       <button class="view" id="active" @click="navigateTo('products')">View Products</button>
       {{cart.length}} in cart
-      <button class="view" @click="navigateTo('cart')">View Cart</button>
+      <button class="view" id="inactive" @click="navigateTo('cart')">View Cart</button>
     </header>
     <div class="body">
       <div v-if="page === 'cart'">
@@ -44,8 +44,16 @@ export default {
     },
     navigateTo(page){
       this.page = page
+      if(page === 'products'){
+        document.getElementById("active").style.backgroundColor="#409EFF"
+        document.getElementById("inactive").style.backgroundColor="#46b824"
+      }
+      else if(page == 'cart'){
+        document.getElementById("inactive").style.backgroundColor="#409EFF"
+        document.getElementById("active").style.backgroundColor="#46b824"
+      }
     }
-  }
+  },
   
 }
 </script>
@@ -68,6 +76,9 @@ export default {
   margin-right: 10px;
   border-radius: 20px;
   outline: none;
+}
+#active{
+  background-color: #409eff;
 }
 header{
   height: 60px;
